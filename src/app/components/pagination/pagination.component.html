@@ -1,0 +1,16 @@
+<div class="pagination">
+  <button
+    type="button"
+    [hidden]="offset === 0"
+    (click)="previousClicked.emit()"
+  >
+    Anterior
+  </button>
+  <button
+    type="button"
+    [hidden]="offset + limit >= totalPokemons"
+    (click)="nextClicked.emit()"
+  >
+    Próxima
+  </button>
+</div>

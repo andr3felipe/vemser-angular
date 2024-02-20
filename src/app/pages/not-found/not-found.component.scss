@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+
+main {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  a {
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border-color: $primary;
+    font-weight: bold;
+    border: 1px solid $primary;
+    text-align: center;
+    color: black;
+
+    cursor: pointer;
+
+    text-decoration: none;
+  }
+}

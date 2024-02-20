@@ -1,0 +1,50 @@
+@import "../../variables.scss";
+
+.header {
+  background-color: $primary;
+  padding: 1rem;
+  color: $primary-foreground;
+  transition: all 0.3s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: $primary-foreground;
+
+    a:hover {
+      color: $destructive;
+    }
+  }
+
+  ul {
+    text-decoration: none;
+    list-style: none;
+
+    li {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  nav {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  border-bottom: 1px solid $destructive;
+}
+
+.logo {
+  max-width: 5rem;
+
+  img {
+    aspect-ratio: 1;
+    object-fit: contain;
+
+    width: 100%;
+  }
+}

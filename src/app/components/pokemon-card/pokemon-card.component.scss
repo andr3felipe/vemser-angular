@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.pokemon-card {
+  background-color: $secondary;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid $primary;
+}
+
+.name {
+  text-transform: capitalize;
+  font-weight: bold;
+}

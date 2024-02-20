@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border-color: $primary;
+    font-weight: bold;
+
+    cursor: pointer;
+  }
+}
