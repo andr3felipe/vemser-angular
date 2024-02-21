@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+main {
+  flex: 1;
+}
+
+.select {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  font-weight: bold;
+
+  select {
+    padding: 0.25rem;
+    border-color: $primary;
+    font-weight: bold;
+    border-radius: 12px;
+
+    option {
+      font-weight: bold;
+    }
+  }
+}

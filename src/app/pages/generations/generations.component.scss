@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.select {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+
+  select {
+    padding: 0.25rem;
+    border-color: $primary;
+    font-weight: bold;
+    border-radius: 12px;
+
+    option {
+      font-weight: bold;
+    }
+  }
+}
+
+.count {
+  text-align: center;
+  font-weight: bold;
+}
+
+.summary {
+  font-weight: bold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

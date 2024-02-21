@@ -2,7 +2,7 @@
 
 .header {
   background-color: $primary;
-  padding: 1rem;
+  padding: 0 1rem;
   color: $primary-foreground;
   transition: all 0.3s ease-in-out;
 
@@ -22,7 +22,7 @@
     li {
       padding: 1rem;
       font-weight: 600;
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
 
@@ -39,7 +39,7 @@
 }
 
 .logo {
-  max-width: 5rem;
+  max-width: 7rem;
 
   img {
     aspect-ratio: 1;

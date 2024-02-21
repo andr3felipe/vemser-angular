@@ -1,27 +1,66 @@
-# VemserAngular
+<h1 align="center"> React Movies </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+<p align="center">
+  Bem-vindo ao projeto React Movies!<br/>
+</p>
 
-## Development server
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-instalacao-do-projeto">Instalação do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+</p>
 
-## Code scaffolding
+<p align="center">
+  <img width="500" alt="imagem da página inicial do site pronto" src="./src/assets/landing-page.png">
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Tecnologias <br id="-tecnologias">
 
-## Build
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Typescript
+- Angular 17
+- SCSS
+- API's (pokeAPI)
 
-## Running unit tests
+## ⚙️ Instalação do projeto <br id="-instalacao-do-projeto">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Passo-a-passo:
 
-## Running end-to-end tests
+#### 1. Clone o repositório para o seu computador usando o seguinte comando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone git@github.com:andr3felipe/vemser-angular.git
+```
 
-## Further help
+#### 2. Navegue até o diretório do projeto:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+cd vemser-angular
+```
+
+#### 3. Instale as dependências do projeto:
+
+```bash
+npm install
+# or
+yarn
+```
+
+#### 3. Inicie um servidor de desenvolvimento:
+
+```bash
+npm ng serve
+# or
+yarn ng serve
+```
+
+## 💻 Sobre o Projeto <br id="-sobre-o-projeto">
+
+Utilizei a pokeAPI pra fazer está aplicação com o tema de pokémon:
+
+- Página inícial com introdução a história do Pokémon;
+- Página de Pokemons, aqui você encontra todos os pokémons;
+- Página de Gerações, aqui você encontra os pokémons de cada geração e mais informações como, principais regiões, tipos de pokémons;
+- Rota dinámica com mais informações especificas de um pokémon (EM CONSTRUÇÃO).

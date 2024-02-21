@@ -1,0 +1,47 @@
+<main>
+  <h1>Gerações de Pokémons</h1>
+
+  <div class="select">
+    <label for="generation">Escolha a geração: </label>
+    <select name="generation" id="generation" (change)="onSelectChange($event)">
+      <option value="" disabled selected>Escolha a geração</option>
+      <option value="1">I</option>
+      <option value="2">II</option>
+      <option value="3">III</option>
+      <option value="4">IV</option>
+      <option value="5">V</option>
+      <option value="6">VI</option>
+      <option value="7">VII</option>
+      <option value="8">VIII</option>
+      <option value="9">IX</option>
+    </select>
+  </div>
+
+  <div class="summary" *ngIf="generation?.main_region">
+    <h2 class="capitalize">
+      {{ generation.name }}
+    </h2>
+
+    <p>
+      Região principal:
+      <span class="capitalize">{{ generation.main_region.name }}</span>
+    </p>
+
+    <p>Quantidade de pokemons: {{ pokemonCount }}</p>
+
+    <div class="flex capitalize items-center types gap-1 wrap">
+      <h3>Tipos de pokemons:</h3>
+      <span *ngFor="let type of generation?.types">{{ type.name }},</span>
+    </div>
+  </div>
+
+  <div
+    class="flex row wrap gap-5 mt-5 mb-5 items-center justify-center"
+    *ngIf="generation?.pokemon_species"
+  >
+    <app-pokemon-card
+      *ngFor="let pokemon of generation?.pokemon_species"
+      [pokemon]="pokemon"
+    ></app-pokemon-card>
+  </div>
+</main>

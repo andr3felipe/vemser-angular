@@ -30,7 +30,7 @@ export interface Options {
 export interface Pokemon {
   id: number;
   name: string;
-  image: string;
+  url: string;
 }
 
 export interface GetPokemonsResponse {
@@ -38,6 +38,24 @@ export interface GetPokemonsResponse {
   next: string | null;
   previous: string | null;
   results: { name: string; url: string }[];
+}
+
+export interface GetPokemonsByGenerationResponse {
+  id: number;
+  main_region: {
+    name: string;
+    url: string;
+  };
+  name: string;
+  pokemon_species: {
+    id: number;
+    name: string;
+    url: string;
+  }[];
+  types: {
+    name: string;
+    url: string;
+  }[];
 }
 
 export interface PaginationParams {
