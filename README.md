@@ -63,4 +63,4 @@ Utilizei a pokeAPI pra fazer está aplicação com o tema de pokémon:
 - Página inícial com introdução a história do Pokémon;
 - Página de Pokemons, aqui você encontra todos os pokémons;
 - Página de Gerações, aqui você encontra os pokémons de cada geração e mais informações como, principais regiões, tipos de pokémons;
-- Rota dinámica com mais informações especificas de um pokémon (EM CONSTRUÇÃO).
+- Rota dinámica com mais informações especificas de um pokémon.

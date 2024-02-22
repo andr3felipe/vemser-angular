@@ -1,0 +1,22 @@
+<main>
+  <a routerLink="/pokemons" class="go-back">Voltar</a>
+
+  <div class="pokemon">
+    @if (pokemon) {
+    <div class="pokemon">
+      <h2 class="capitalize">{{ pokemon.name }}</h2>
+      <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" />
+      <p>Height: {{ pokemon.height }}</p>
+      <p>Weight: {{ pokemon.weight }}</p>
+      <p>Abilities:</p>
+      <ul>
+        <li *ngFor="let ability of pokemon.abilities">
+          {{ ability.ability.name }}
+        </li>
+      </ul>
+    </div>
+    } @else {
+    <p>Carregando...</p>
+    }
+  </div>
+</main>

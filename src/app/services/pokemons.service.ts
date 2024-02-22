@@ -3,6 +3,7 @@ import { ApiService } from './api.service';
 import { Observable } from 'rxjs';
 import {
   GetPokemonsByGenerationResponse,
+  GetPokemonsByIdResponse,
   GetPokemonsResponse,
   PaginationParams,
 } from '../../types';
@@ -19,6 +20,12 @@ export class PokemonsService {
   ): Observable<GetPokemonsResponse> => {
     return this.apiService.get(url, {
       params,
+      responseType: 'json',
+    });
+  };
+
+  getPokemonById = (url: string): Observable<GetPokemonsByIdResponse> => {
+    return this.apiService.get(url, {
       responseType: 'json',
     });
   };

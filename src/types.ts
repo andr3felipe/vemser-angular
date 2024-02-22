@@ -33,6 +33,54 @@ export interface Pokemon {
   url: string;
 }
 
+export interface GetPokemonsByIdResponse {
+  id: number;
+  abilities: {
+    ability: {
+      name: string;
+      url: string;
+    };
+  }[];
+  height: number;
+  weight: number;
+
+  moves: {
+    move: {
+      name: string;
+      url: string;
+    };
+  }[];
+
+  name: string;
+  sprites: {
+    back_default: string;
+    back_female: null;
+    back_shiny: string;
+    back_shiny_female: null;
+    front_default: string;
+    front_female: null;
+    front_shiny: string;
+    front_shiny_female: null;
+  };
+
+  stats: {
+    base_stat: number;
+    effort: number;
+    stat: {
+      name: string;
+      url: string;
+    };
+  }[];
+
+  types: {
+    slot: number;
+    type: {
+      name: string;
+      url: string;
+    };
+  }[];
+}
+
 export interface GetPokemonsResponse {
   count: number;
   next: string | null;

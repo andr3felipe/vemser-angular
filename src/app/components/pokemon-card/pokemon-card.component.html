@@ -1,4 +1,7 @@
-<div class="flex column gap-1 pokemon-card">
+<a
+  class="flex column gap-1 pokemon-card"
+  [routerLink]="['/pokemon', pokemon.id]"
+>
   <p class="name">{{ pokemon.name }}</p>
   <img [src]="pokemon.url" [alt]="pokemon.name" />
-</div>
+</a>

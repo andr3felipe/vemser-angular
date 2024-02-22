@@ -5,6 +5,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PokemonsComponent } from './pages/pokemons/pokemons.component';
 import { HomeComponent } from './pages/home/home.component';
 import { GenerationsComponent } from './pages/generations/generations.component';
+import { PokemonComponent } from './pages/pokemon/pokemon.component';
 
 export const routes: Routes = [
   {
@@ -14,6 +15,10 @@ export const routes: Routes = [
   {
     path: 'pokemons',
     component: PokemonsComponent,
+  },
+  {
+    path: 'pokemon/:id',
+    component: PokemonComponent,
   },
   {
     path: 'geracoes',
