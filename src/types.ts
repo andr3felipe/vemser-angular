@@ -51,6 +51,8 @@ export interface GetPokemonsByIdResponse {
     };
   }[];
 
+  base_experience: number;
+
   name: string;
   sprites: {
     back_default: string;
