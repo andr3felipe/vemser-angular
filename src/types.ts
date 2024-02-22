@@ -63,6 +63,8 @@ export interface GetPokemonsByIdResponse {
     front_female: null;
     front_shiny: string;
     front_shiny_female: null;
+    other: {};
+    versions: {};
   };
 
   stats: {

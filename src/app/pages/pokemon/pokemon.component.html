@@ -3,6 +3,7 @@
 
   <div class="container">
     @if (pokemon) {
+
     <div class="pokemon">
       <h2 class="capitalize">{{ pokemon.name }}</h2>
       <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" />
@@ -28,6 +29,24 @@
               {{ type.type.name }}
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="images-container">
+      <p>Sprites:</p>
+      <div class="images">
+        <div *ngFor="let sprite of pokemon.sprites | keyvalue">
+          <img
+            *ngIf="
+              sprite.value &&
+              sprite.value !== null &&
+              sprite.key !== 'other' &&
+              sprite.key !== 'versions'
+            "
+            [src]="sprite.value"
+            alt="{{ sprite.key }}"
+          />
         </div>
       </div>
     </div>

@@ -24,6 +24,8 @@ export class PokemonComponent implements OnInit {
       .getPokemonById(`https://pokeapi.co/api/v2/pokemon/${id}`)
       .subscribe((response: GetPokemonsByIdResponse) => {
         this.pokemon = response;
+
+        console.log(response);
       });
   }
 

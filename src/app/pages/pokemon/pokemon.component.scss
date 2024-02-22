@@ -4,6 +4,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-weight: bold;
 }
 
 .container {
@@ -14,8 +15,6 @@ main {
   padding: 2rem 4rem;
   border: 2px solid $primary;
   border-radius: 12px;
-
-  font-weight: bold;
 
   display: flex;
   align-items: center;
@@ -36,6 +35,18 @@ main {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.images-container {
+  margin-top: 2rem;
 }
 
 .go-back {
